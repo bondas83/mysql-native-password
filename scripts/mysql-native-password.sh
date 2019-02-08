@@ -19,5 +19,3 @@
 
 cd /etc/mysql
 ls -al
-
-sudo sed -i '/^\[mysqld\]$/a\default-authentication-plugin=mysql_native_password' /etc/mysql/my.cnf
