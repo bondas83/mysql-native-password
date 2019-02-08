@@ -5,4 +5,4 @@ FROM mysql
 # executed during container startup
 COPY ./scripts/ /docker-entrypoint-initdb.d/
 
-RUN sed -i '/^\[mysqld\]$/a\default-authentication-plugin=mysql_native_password' /etc/my.cnf
+RUN sed -i '/^\[mysqld\]$/a\default-authentication-plugin=mysql_native_password' /etc/mysql/my.cnf
