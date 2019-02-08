@@ -16,4 +16,4 @@
 
 # The mysql-init-complete file is touched by the entrypoint file before the
 # main server process is started
-RUN sed -i '/^\[mysqld\]$/a\default-authentication-plugin=mysql_native_password' /etc/mysql/my.cnf
+sed -i '/^\[mysqld\]$/a\default-authentication-plugin=mysql_native_password' /etc/mysql/my.cnf
