@@ -3,4 +3,4 @@ mysql-native-password
 
 
 To check if Mysql is up use: command:
-<code>docker exec mysql_testing /bin/bash waitForMySQL.sh</code>
+<code>docker exec container_name /bin/bash waitForMySQL.sh</code>
