@@ -7,6 +7,7 @@ while true; do
     res=$(mysql --protocol TCP -u"root" 2>&1)
     
     if [[ "$res" == *"Access denied for user"* ]]; then
+        >&2 echo "Connect success"
         exit 0
     fi;
     
