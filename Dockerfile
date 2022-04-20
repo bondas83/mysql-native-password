@@ -1,5 +1,5 @@
 # Derived from official mysql image (our base image)
-FROM mysql:8.0.24
+FROM mysql:8.0.28
 
 RUN sed -i '/^\[mysqld\]$/a\default-authentication-plugin=mysql_native_password' /etc/mysql/my.cnf
 
